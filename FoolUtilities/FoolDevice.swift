@@ -60,8 +60,9 @@ public extension UIDevice {
         case "iPad6,11", "iPad6,12":                    return "iPad 5"
         case "iPad7,1", "iPad7,2":                      return "iPad Pro 12.9\" (2nd Gen)"
         case "iPad7,3", "iPad7,4":                      return "iPad Pro 10.5\""
+        case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4":return "iPad Pro 11\""
+        case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8":return "iPad Pro 12.9\" (3rd Gen)"
             
-        case "AppleTV5,3":                              return "Apple TV"
         case "i386", "x86_64":                          return "Simulator"
         default:                                        return identifier
         }
