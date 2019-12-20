@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E95216F423ACAF090004D996 /* FoolDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95216F323ACAF090004D996 /* FoolDevice.swift */; };
 		OBJ_22 /* FoolUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* FoolUtilities.swift */; };
 		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E95216F323ACAF090004D996 /* FoolDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolDevice.swift; sourceTree = "<group>"; };
 		"FoolUtilities::FoolUtilities::Product" /* FoolUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FoolUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* FoolUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolUtilities.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* FoolUtilities.swift */,
+				E95216F323ACAF090004D996 /* FoolDevice.swift */,
 			);
 			path = FoolUtilities;
 			sourceTree = SOURCE_ROOT;
@@ -119,6 +122,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_22 /* FoolUtilities.swift in Sources */,
+				E95216F423ACAF090004D996 /* FoolDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
