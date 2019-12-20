@@ -17,7 +17,7 @@ public func foolPrint<T>(_ message: T, file: String = #file, method: String = #f
     #endif
 }
 
-public func uInt64ToHumanReadable(input: UInt64, bBinary: Bool) -> String! {
+public func uInt64ToHumanReadable(input: UInt64, bBinary: Bool) -> String {
     let unit:UInt64 = bBinary ? 1024 : 1000;
     if input < unit { return String(describing: input)+" B"; }
     let exp:Int = Int(log(Double(input)) / log(Double(unit)));
