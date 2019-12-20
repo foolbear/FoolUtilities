@@ -8,7 +8,7 @@
 
 import Foundation
 
-func foolPrint<T>(_ message: T, file: String = #file, method: String = #function, line: Int = #line) {
+public func foolPrint<T>(_ message: T, file: String = #file, method: String = #function, line: Int = #line) {
     #if DEBUG
     let now = Date()
     let dformatter = DateFormatter(); dformatter.dateFormat = "yy-MM-dd HH:mm:ss"
