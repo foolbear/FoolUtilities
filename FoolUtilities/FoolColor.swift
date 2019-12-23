@@ -31,6 +31,7 @@ public extension UIColor {
     
 }
 
+@available(iOS 13.0, *)
 public extension Color {
     
     init(rgbHex: UInt) {
