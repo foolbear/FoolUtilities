@@ -9,9 +9,15 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public struct FoolHeaderView<Leading, Title, Trailing>: View where Leading: View, Title: View, Trailing: View {
-    public var leading: Leading
-    public var title: Title
-    public var trailing: Trailing
+    var leading: Leading
+    var title: Title
+    var trailing: Trailing
+    
+    public init(leading: Leading, title: Title, trailing: Trailing) {
+        self.leading = leading
+        self.title = title
+        self.trailing = trailing
+    }
     
     public var body: some View {
         VStack() {
