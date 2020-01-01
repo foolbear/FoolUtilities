@@ -8,28 +8,28 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-public struct FoolHeaderView: View {
-    var leadingButton: AnyView?
-    var title: AnyView?
-    var trailingButton: AnyView?
+public struct FoolHeaderView<Leading, Title, Trailing>: View where Leading: View, Title: View, Trailing: View {
+    var leading: () -> Leading
+    var title: () -> Title
+    var trailing: () -> Trailing
     
     public var body: some View {
         VStack() {
             Spacer()
-                .frame(height: 20)
+                .frame(height: 8)
             ZStack {
                 HStack {
                     Spacer()
-                    title
+                    title()
                     Spacer()
                 }
                 HStack {
                     VStack(alignment: .leading) {
-                        leadingButton.padding()
+                        leading().padding()
                     }
                     Spacer()
                     VStack(alignment: .trailing) {
-                        trailingButton.padding()
+                        trailing().padding()
                     }
                 }
             }
