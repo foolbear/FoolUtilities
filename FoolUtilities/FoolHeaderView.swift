@@ -9,9 +9,9 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public struct FoolHeaderView<Leading, Title, Trailing>: View where Leading: View, Title: View, Trailing: View {
-    var leading: () -> Leading
-    var title: () -> Title
-    var trailing: () -> Trailing
+    var leading: Leading
+    var title: Title
+    var trailing: Trailing
     
     public var body: some View {
         VStack() {
@@ -20,20 +20,30 @@ public struct FoolHeaderView<Leading, Title, Trailing>: View where Leading: View
             ZStack {
                 HStack {
                     Spacer()
-                    title()
+                    title
                     Spacer()
                 }
                 HStack {
                     VStack(alignment: .leading) {
-                        leading().padding()
+                        leading.padding()
                     }
                     Spacer()
                     VStack(alignment: .trailing) {
-                        trailing().padding()
+                        trailing.padding()
                     }
                 }
             }
             Divider()
         }
+    }
+}
+
+@available(iOS 13.0, *)
+struct FoolHeaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        FoolHeaderView(leading: EmptyView(), title: Text("Title"), trailing:
+            Button(action: {}) {
+                Text("Done")
+        })
     }
 }
