@@ -11,6 +11,7 @@
 		E95216F423ACAF090004D996 /* FoolDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95216F323ACAF090004D996 /* FoolDevice.swift */; };
 		E952170223ACE61B0004D996 /* FoolColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952170123ACE61B0004D996 /* FoolColor.swift */; };
 		E952170423ACE77A0004D996 /* FoolString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952170323ACE77A0004D996 /* FoolString.swift */; };
+		E9995EEA23BF159600E5A527 /* FoolNoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9995EE923BF159600E5A527 /* FoolNoDataView.swift */; };
 		E9E14F7E23B8FCF0000545A6 /* FoolDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */; };
 		E9E298A723BCEB8B00EEEE38 /* FoolHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */; };
 		OBJ_22 /* FoolUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* FoolUtilities.swift */; };
@@ -23,6 +24,7 @@
 		E952170123ACE61B0004D996 /* FoolColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolColor.swift; sourceTree = "<group>"; };
 		E952170323ACE77A0004D996 /* FoolString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolString.swift; sourceTree = "<group>"; };
 		E952170523ACE8A50004D996 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E9995EE923BF159600E5A527 /* FoolNoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolNoDataView.swift; sourceTree = "<group>"; };
 		E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoolDate.swift; sourceTree = "<group>"; };
 		E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolHeaderView.swift; sourceTree = "<group>"; };
 		"FoolUtilities::FoolUtilities::Product" /* FoolUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FoolUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 				E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */,
 				E9001E1023BB227A006E33F6 /* FoolView.swift */,
 				E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */,
+				E9995EE923BF159600E5A527 /* FoolNoDataView.swift */,
 			);
 			path = FoolUtilities;
 			sourceTree = SOURCE_ROOT;
@@ -139,6 +142,7 @@
 			buildActionMask = 0;
 			files = (
 				E9001E1123BB227A006E33F6 /* FoolView.swift in Sources */,
+				E9995EEA23BF159600E5A527 /* FoolNoDataView.swift in Sources */,
 				E9E14F7E23B8FCF0000545A6 /* FoolDate.swift in Sources */,
 				E952170223ACE61B0004D996 /* FoolColor.swift in Sources */,
 				OBJ_22 /* FoolUtilities.swift in Sources */,
