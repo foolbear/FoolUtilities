@@ -9,7 +9,7 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public class FoolKeyboard: ObservableObject {
-    static let shared = FoolKeyboard()
+    public static let shared = FoolKeyboard()
     @Published public var height: CGFloat = 0
     private var center: NotificationCenter
 
