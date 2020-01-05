@@ -9,10 +9,11 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public class FoolKeyboard: ObservableObject {
-    private var center: NotificationCenter
+    static let shared = FoolKeyboard()
     @Published public var height: CGFloat = 0
+    private var center: NotificationCenter
 
-    public init(center: NotificationCenter = .default) {
+    private init(center: NotificationCenter = .default) {
         self.center = center
         self.center.addObserver(self, selector: #selector(keyBoardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         self.center.addObserver(self, selector: #selector(keyBoardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
