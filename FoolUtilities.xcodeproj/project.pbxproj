@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E9001E1123BB227A006E33F6 /* FoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9001E1023BB227A006E33F6 /* FoolView.swift */; };
+		E9001E1123BB227A006E33F6 /* FoolAnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9001E1023BB227A006E33F6 /* FoolAnyView.swift */; };
 		E95216F423ACAF090004D996 /* FoolDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95216F323ACAF090004D996 /* FoolDevice.swift */; };
 		E952170223ACE61B0004D996 /* FoolColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952170123ACE61B0004D996 /* FoolColor.swift */; };
 		E952170423ACE77A0004D996 /* FoolString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952170323ACE77A0004D996 /* FoolString.swift */; };
@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E9001E1023BB227A006E33F6 /* FoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolView.swift; sourceTree = "<group>"; };
+		E9001E1023BB227A006E33F6 /* FoolAnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolAnyView.swift; sourceTree = "<group>"; };
 		E95216F323ACAF090004D996 /* FoolDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolDevice.swift; sourceTree = "<group>"; };
 		E952170123ACE61B0004D996 /* FoolColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolColor.swift; sourceTree = "<group>"; };
 		E952170323ACE77A0004D996 /* FoolString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolString.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				E952170123ACE61B0004D996 /* FoolColor.swift */,
 				E952170323ACE77A0004D996 /* FoolString.swift */,
 				E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */,
-				E9001E1023BB227A006E33F6 /* FoolView.swift */,
+				E9001E1023BB227A006E33F6 /* FoolAnyView.swift */,
 				E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */,
 				E9995EE923BF159600E5A527 /* FoolNoDataView.swift */,
 				E9995EF423BF8B8F00E5A527 /* FoolKeyboard.swift */,
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				E9001E1123BB227A006E33F6 /* FoolView.swift in Sources */,
+				E9001E1123BB227A006E33F6 /* FoolAnyView.swift in Sources */,
 				E9995EEA23BF159600E5A527 /* FoolNoDataView.swift in Sources */,
 				E9E14F7E23B8FCF0000545A6 /* FoolDate.swift in Sources */,
 				E952170223ACE61B0004D996 /* FoolColor.swift in Sources */,

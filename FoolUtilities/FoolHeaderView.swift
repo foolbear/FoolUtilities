@@ -21,8 +21,11 @@ public struct FoolHeaderView<Leading, Title, Trailing>: View where Leading: View
     
     public var body: some View {
         VStack() {
-            Spacer()
-                .frame(height: 8)
+            Rectangle()
+                .frame(width: 60, height: 6)
+                .cornerRadius(3.0)
+                .opacity(0.3)
+                .padding(.top, 16)
             ZStack {
                 HStack {
                     Spacer()
@@ -47,9 +50,13 @@ public struct FoolHeaderView<Leading, Title, Trailing>: View where Leading: View
 @available(iOS 13.0, *)
 struct FoolHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        FoolHeaderView(leading: EmptyView(), title: Text("Title"), trailing:
-            Button(action: {}) {
-                Text("Done")
-        })
+        VStack {
+            Spacer()
+            FoolHeaderView(leading: EmptyView(), title: Text("Title"), trailing:
+                Button(action: {}) {
+                    Text("Done")
+            })
+            Spacer()
+        }
     }
 }
