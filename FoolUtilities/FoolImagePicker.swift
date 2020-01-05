@@ -14,6 +14,12 @@ public struct FoolImagePicker: UIViewControllerRepresentable {
     @Binding var showing: Bool
     @Binding var image: Image?
     
+    public init(sourceType: UIImagePickerController.SourceType, showing: Binding<Bool>, image: Binding<Image?>) {
+        self.sourceType = sourceType
+        self._showing = showing
+        self._image = image
+    }
+    
     public func makeCoordinator() -> Coordinator {
         return Coordinator(sourceType: sourceType, showing: $showing, image: $image)
     }
