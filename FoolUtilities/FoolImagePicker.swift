@@ -1,6 +1,6 @@
 //
 //  FoolImagePicker.swift
-//  StudyCards
+//  FoolUtilities
 //
 //  Created by foolbear on 2020/1/5.
 //  Copyright © 2020 Foolbear Co.,Ltd. All rights reserved.
