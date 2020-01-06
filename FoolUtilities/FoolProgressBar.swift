@@ -18,7 +18,7 @@ public struct FoolProgressBar: View {
     var cornerRadius: CGFloat = 8
     var barWidth: CGFloat {
         if axes == .horizontal {
-            return self.isShowing ? size.width * (self.progress / 100.0) : 0.0
+            return self.isShowing ? size.width * CGFloat(progress) / 100.0 : 0.0
         } else {
             return size.width
         }
@@ -27,13 +27,13 @@ public struct FoolProgressBar: View {
         if axes == .horizontal {
             return size.height
         } else {
-            return self.isShowing ? size.height * (self.progress / 100.0) : 00
+            return self.isShowing ? size.height * CGFloat(progress) / 100.0 : 0.0
         }
     }
-    @Binding var progress: CGFloat
+    @Binding var progress: Double
     @State private var isShowing = false
     
-    public init(progress: Binding<CGFloat>, size: CGSize, cornerRadius: CGFloat, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .gray) {
+    public init(progress: Binding<Double>, size: CGSize, cornerRadius: CGFloat, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .gray) {
         self._progress = progress
         self.size = size
         self.foregroundColor = foregroundColor
@@ -43,7 +43,7 @@ public struct FoolProgressBar: View {
         self.cornerRadius = cornerRadius
     }
     
-    public init(progress: Binding<CGFloat>, size: CGSize, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .gray) {
+    public init(progress: Binding<Double>, size: CGSize, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .gray) {
         self._progress = progress
         self.size = size
         self.foregroundColor = foregroundColor
@@ -73,7 +73,7 @@ public struct FoolProgressBar: View {
 
 @available(iOS 13.0, *)
 struct FoolProgressBarTestView: View {
-    @State private var progress: CGFloat = 34
+    @State private var progress: Double = 34
     var body: some View {
         FoolProgressBar(progress: $progress, size: CGSize(width: 150, height: 320), cornerRadius: 10, axes: .vertical, alignment: .bottom)
             .onTapGesture {
