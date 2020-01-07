@@ -16,6 +16,7 @@ public struct FoolProgressBar: View {
     var axes: Axis.Set = .horizontal
     var alignment: Alignment = .leading
     var cornerRadius: CGFloat = 8
+    var animation: Animation? = .linear(duration: 0.5)
     var barWidth: CGFloat {
         if axes == .horizontal {
             return self.isShowing ? size.width * CGFloat(progress) / 100.0 : 0.0
@@ -33,7 +34,7 @@ public struct FoolProgressBar: View {
     @Binding var progress: Double
     @State private var isShowing = false
     
-    public init(progress: Binding<Double>, size: CGSize, cornerRadius: CGFloat, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .gray) {
+    public init(progress: Binding<Double>, size: CGSize, cornerRadius: CGFloat, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .gray, animation: Animation? = .linear(duration: 0.5)) {
         self._progress = progress
         self.size = size
         self.foregroundColor = foregroundColor
@@ -41,9 +42,10 @@ public struct FoolProgressBar: View {
         self.axes = axes
         self.alignment = alignment
         self.cornerRadius = cornerRadius
+        self.animation = animation
     }
     
-    public init(progress: Binding<Double>, size: CGSize, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .gray) {
+    public init(progress: Binding<Double>, size: CGSize, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .gray, animation: Animation? = .linear(duration: 0.5)) {
         self._progress = progress
         self.size = size
         self.foregroundColor = foregroundColor
@@ -51,6 +53,7 @@ public struct FoolProgressBar: View {
         self.axes = axes
         self.alignment = alignment
         self.cornerRadius = axes == .horizontal ? size.height / 2.0 : size.width / 2.0
+        self.animation = animation
     }
     
     public var body: some View {
@@ -62,7 +65,7 @@ public struct FoolProgressBar: View {
             Rectangle()
                 .foregroundColor(foregroundColor)
                 .frame(width: barWidth, height: barHeight)
-                .animation(.linear(duration: 0.6))
+                .animation(animation)
         }
         .onAppear {
             self.isShowing = true
