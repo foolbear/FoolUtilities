@@ -10,18 +10,17 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public struct FoolImagePicker: UIViewControllerRepresentable {
+    @Environment(\.presentationMode) var presentationMode
     var sourceType: UIImagePickerController.SourceType
-    @Binding var showing: Bool
     @Binding var image: Image?
     
-    public init(sourceType: UIImagePickerController.SourceType, showing: Binding<Bool>, image: Binding<Image?>) {
+    public init(sourceType: UIImagePickerController.SourceType, image: Binding<Image?>) {
         self.sourceType = sourceType
-        self._showing = showing
         self._image = image
     }
     
     public func makeCoordinator() -> Coordinator {
-        return Coordinator(sourceType: sourceType, showing: $showing, image: $image)
+        return Coordinator(parent: self)
     }
     
     public func makeUIViewController(context: UIViewControllerRepresentableContext<FoolImagePicker>) -> UIImagePickerController {
@@ -37,24 +36,22 @@ public struct FoolImagePicker: UIViewControllerRepresentable {
     }
 
     public class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-        var sourceType: UIImagePickerController.SourceType
-        @Binding var showing: Bool
-        @Binding var image: Image?
+        var parent: FoolImagePicker
         
-        public init(sourceType: UIImagePickerController.SourceType, showing: Binding<Bool>, image: Binding<Image?>) {
-            self.sourceType = sourceType
-            self._showing = showing
-            self._image = image
+        public init(parent: FoolImagePicker) {
+            self.parent = parent
         }
         
         public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             guard let unwrapImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
-            image = Image(uiImage: unwrapImage)
-            showing = false
+            parent.image = Image(uiImage: unwrapImage)
+            parent.presentationMode.wrappedValue.dismiss()
+            picker.dismiss(animated: true, completion: nil)
         }
         
         public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            showing = false
+            parent.presentationMode.wrappedValue.dismiss()
+            picker.dismiss(animated: true, completion: nil)
         }
     }
 }
