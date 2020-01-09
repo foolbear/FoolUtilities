@@ -12,9 +12,9 @@ import SwiftUI
 public struct FoolImagePicker: UIViewControllerRepresentable {
     @Environment(\.presentationMode) var presentationMode
     var sourceType: UIImagePickerController.SourceType
-    @Binding var image: Image?
+    @Binding var image: UIImage?
     
-    public init(sourceType: UIImagePickerController.SourceType, image: Binding<Image?>) {
+    public init(sourceType: UIImagePickerController.SourceType, image: Binding<UIImage?>) {
         self.sourceType = sourceType
         self._image = image
     }
@@ -44,7 +44,7 @@ public struct FoolImagePicker: UIViewControllerRepresentable {
         
         public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             guard let unwrapImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
-            parent.image = Image(uiImage: unwrapImage)
+            parent.image = unwrapImage
             parent.presentationMode.wrappedValue.dismiss()
             picker.dismiss(animated: true, completion: nil)
         }
