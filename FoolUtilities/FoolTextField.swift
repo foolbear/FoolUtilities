@@ -12,7 +12,7 @@ public struct FoolTextField: UIViewRepresentable {
     @Binding var text: String
     private let textField = UITextField(frame: .zero)
     
-    init(_ placeholder: String, text: Binding<String>) {
+    public init(_ placeholder: String, text: Binding<String>) {
         _text = text
         textField.placeholder = placeholder
         textField.borderStyle = .none
