@@ -14,6 +14,7 @@ public struct FoolTextField: UIViewRepresentable {
     
     public init(_ placeholder: String, text: Binding<String>) {
         _text = text
+        textField.text = text.wrappedValue
         textField.placeholder = placeholder
         textField.borderStyle = .none
         textField.clearButtonMode = .whileEditing
