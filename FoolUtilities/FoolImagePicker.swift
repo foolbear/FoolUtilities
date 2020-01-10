@@ -43,7 +43,7 @@ public struct FoolImagePicker: UIViewControllerRepresentable {
         }
         
         public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            guard let unwrapImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
+            guard let unwrapImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else { return }
             parent.image = unwrapImage
             parent.presentationMode.wrappedValue.dismiss()
             picker.dismiss(animated: true, completion: nil)
