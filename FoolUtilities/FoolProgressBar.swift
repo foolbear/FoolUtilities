@@ -34,7 +34,7 @@ public struct FoolProgressBar: View {
     @Binding var progress: Double
     @State private var isShowing = false
     
-    public init(progress: Binding<Double>, size: CGSize, cornerRadius: CGFloat, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .gray, animation: Animation? = .linear(duration: 0.5)) {
+    public init(progress: Binding<Double>, size: CGSize, cornerRadius: CGFloat, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .secondary, animation: Animation? = .linear(duration: 0.5)) {
         self._progress = progress
         self.size = size
         self.foregroundColor = foregroundColor
@@ -45,7 +45,7 @@ public struct FoolProgressBar: View {
         self.animation = animation
     }
     
-    public init(progress: Binding<Double>, size: CGSize, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .gray, animation: Animation? = .linear(duration: 0.5)) {
+    public init(progress: Binding<Double>, size: CGSize, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .secondary, animation: Animation? = .linear(duration: 0.5)) {
         self._progress = progress
         self.size = size
         self.foregroundColor = foregroundColor

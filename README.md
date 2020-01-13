@@ -36,5 +36,8 @@
 ### FoolProgressBar (SwiftUI)  
 * struct FoolProgressBar: View  
 
+### FoolProgressRing (SwiftUI)  
+* struct FoolProgressRing: View  
+
 ### FoolTextField (SwiftUI)  
 * FoolTextField: UIViewRepresentable  
