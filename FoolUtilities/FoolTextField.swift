@@ -22,6 +22,7 @@ public struct FoolTextField: UIViewRepresentable {
     }
     
     public func makeUIView(context: UIViewRepresentableContext<FoolTextField>) -> UITextField {
+        textField.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         textField.delegate = context.coordinator
         return textField
     }
