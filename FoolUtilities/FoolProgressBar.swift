@@ -10,6 +10,7 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public struct FoolProgressBar: View {
+    var progress: Double
     var size: CGSize
     var foregroundColor: Color = .blue
     var backgroundColor: Color = .secondary
@@ -31,11 +32,10 @@ public struct FoolProgressBar: View {
             return self.isShowing ? size.height * CGFloat(progress) / 100.0 : 0.0
         }
     }
-    @Binding var progress: Double
     @State private var isShowing = false
     
-    public init(progress: Binding<Double>, size: CGSize, cornerRadius: CGFloat, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .secondary, animation: Animation? = .linear(duration: 0.5)) {
-        self._progress = progress
+    public init(progress: Double, size: CGSize, cornerRadius: CGFloat, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .secondary, animation: Animation? = .linear(duration: 0.5)) {
+        self.progress = progress
         self.size = size
         self.foregroundColor = foregroundColor
         self.backgroundColor = backgroundColor
@@ -45,8 +45,8 @@ public struct FoolProgressBar: View {
         self.animation = animation
     }
     
-    public init(progress: Binding<Double>, size: CGSize, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .secondary, animation: Animation? = .linear(duration: 0.5)) {
-        self._progress = progress
+    public init(progress: Double, size: CGSize, axes: Axis.Set = .horizontal, alignment: Alignment = .leading, foregroundColor: Color = .blue, backgroundColor: Color = .secondary, animation: Animation? = .linear(duration: 0.5)) {
+        self.progress = progress
         self.size = size
         self.foregroundColor = foregroundColor
         self.backgroundColor = backgroundColor
@@ -78,7 +78,7 @@ public struct FoolProgressBar: View {
 struct FoolProgressBarTestView: View {
     @State private var progress: Double = 34
     var body: some View {
-        FoolProgressBar(progress: $progress, size: CGSize(width: 150, height: 320), cornerRadius: 10, axes: .vertical, alignment: .bottom)
+        FoolProgressBar(progress: progress, size: CGSize(width: 150, height: 320), cornerRadius: 10, axes: .vertical, alignment: .bottom)
             .onTapGesture {
                 self.progress += 10
                 if self.progress > 100 {
@@ -92,10 +92,10 @@ struct FoolProgressBarTestView: View {
 struct FoolProgressBar_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            FoolProgressBar(progress: .constant(40), size: CGSize(width: 320, height: 20), alignment: .leading)
-            FoolProgressBar(progress: .constant(25), size: CGSize(width: 320, height: 20), alignment: .trailing)
-            FoolProgressBar(progress: .constant(25), size: CGSize(width: 320, height: 20), cornerRadius: 10)
-            FoolProgressBar(progress: .constant(25), size: CGSize(width: 150, height: 320), cornerRadius: 10, axes: .vertical, alignment: .top)
+            FoolProgressBar(progress: 40, size: CGSize(width: 320, height: 20), alignment: .leading)
+            FoolProgressBar(progress: 25, size: CGSize(width: 320, height: 20), alignment: .trailing)
+            FoolProgressBar(progress: 25, size: CGSize(width: 320, height: 20), cornerRadius: 10)
+            FoolProgressBar(progress: 25, size: CGSize(width: 150, height: 320), cornerRadius: 10, axes: .vertical, alignment: .top)
             FoolProgressBarTestView()
         }
     }

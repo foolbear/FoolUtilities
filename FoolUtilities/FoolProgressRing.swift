@@ -9,15 +9,15 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public struct FoolProgressRing: View {
+    var progress: Double
     var foregroundColor: Color = .blue
     var backgroundColor: Color = .secondary
     var lineWidth: CGFloat = 4
     var animation: Animation? = .linear(duration: 0.5)
-    @Binding var progress: Double
     @State private var isShowing = false
     
-    public init(progress: Binding<Double>, foregroundColor: Color = .blue, backgroundColor: Color = .secondary, lineWidth: CGFloat = 4, animation: Animation? = .linear(duration: 0.5)) {
-        self._progress = progress
+    public init(progress: Double, foregroundColor: Color = .blue, backgroundColor: Color = .secondary, lineWidth: CGFloat = 4, animation: Animation? = .linear(duration: 0.5)) {
+        self.progress = progress
         self.foregroundColor = foregroundColor
         self.backgroundColor = backgroundColor
         self.lineWidth = lineWidth
@@ -45,7 +45,7 @@ public struct FoolProgressRing: View {
 struct FoolProgressRingTestView: View {
     @State private var progress: Double = 34
     var body: some View {
-        FoolProgressRing(progress: $progress)
+        FoolProgressRing(progress: progress)
             .onTapGesture {
                 self.progress += 10
                 if self.progress > 100 {
@@ -60,7 +60,7 @@ struct FoolProgressRingTestView: View {
 struct FoolProgressRing_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            FoolProgressRing(progress: .constant(40)).frame(height: 200)
+            FoolProgressRing(progress: 40).frame(height: 200)
             FoolProgressRingTestView()
         }
     }
