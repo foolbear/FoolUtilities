@@ -63,23 +63,7 @@ public extension UIDevice {
         case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4":return "iPad Pro 11\""
         case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8":return "iPad Pro 12.9\" (3rd Gen)"
             
-        case "i386", "x86_64":
-            var size : Int = 0
-            sysctlbyname("hw.model", nil, &size, nil, 0)
-            var model = [CChar](repeating: 0, count: Int(size))
-            sysctlbyname("hw.model", &model, &size, nil, 0)
-            let modelName = String(validatingUTF8: model) ?? ""
-            
-            if modelName.hasPrefix("MacPro") { return "MacPro" }
-            else if modelName.hasPrefix("iMac") { return "iMac" }
-            else if modelName.hasPrefix("MacBookPro") { return "MacBookPro" }
-            else if modelName.hasPrefix("MacBookAir") { return "MacBookAir" }
-            else if modelName.hasPrefix("MacBook") { return "MacBook" }
-            else if modelName.hasPrefix("MacMini") { return "MacMini" }
-            else if modelName.hasPrefix("Xserve") { return "Xserve" }
-            else { return modelName }
-//            return "Simulator"
-            
+        case "i386", "x86_64":                          return "Simulator"
         default:                                        return identifier
         }
     }
