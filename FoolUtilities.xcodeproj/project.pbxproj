@@ -17,6 +17,7 @@
 		E952846F23C3564F004CDCFC /* FoolProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952846E23C3564F004CDCFC /* FoolProgressBar.swift */; };
 		E9995EEA23BF159600E5A527 /* FoolNoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9995EE923BF159600E5A527 /* FoolNoDataView.swift */; };
 		E9995EF523BF8B8F00E5A527 /* FoolKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9995EF423BF8B8F00E5A527 /* FoolKeyboard.swift */; };
+		E9A3CAB423E1ADD300F5BF57 /* FoolShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3CAB323E1ADD300F5BF57 /* FoolShareSheet.swift */; };
 		E9E14F7E23B8FCF0000545A6 /* FoolDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */; };
 		E9E298A723BCEB8B00EEEE38 /* FoolHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */; };
 		OBJ_22 /* FoolUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* FoolUtilities.swift */; };
@@ -35,6 +36,7 @@
 		E952846E23C3564F004CDCFC /* FoolProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoolProgressBar.swift; sourceTree = "<group>"; };
 		E9995EE923BF159600E5A527 /* FoolNoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolNoDataView.swift; sourceTree = "<group>"; };
 		E9995EF423BF8B8F00E5A527 /* FoolKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolKeyboard.swift; sourceTree = "<group>"; };
+		E9A3CAB323E1ADD300F5BF57 /* FoolShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolShareSheet.swift; sourceTree = "<group>"; };
 		E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoolDate.swift; sourceTree = "<group>"; };
 		E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolHeaderView.swift; sourceTree = "<group>"; };
 		"FoolUtilities::FoolUtilities::Product" /* FoolUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FoolUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 				E911F75723CCC8CA005D5641 /* FoolProgressRing.swift */,
 				E952846E23C3564F004CDCFC /* FoolProgressBar.swift */,
 				E911F74723C76409005D5641 /* FoolTextField.swift */,
+				E9A3CAB323E1ADD300F5BF57 /* FoolShareSheet.swift */,
 			);
 			path = FoolUtilities;
 			sourceTree = SOURCE_ROOT;
@@ -157,6 +160,7 @@
 			buildActionMask = 0;
 			files = (
 				E9001E1123BB227A006E33F6 /* FoolAnyView.swift in Sources */,
+				E9A3CAB423E1ADD300F5BF57 /* FoolShareSheet.swift in Sources */,
 				E952846F23C3564F004CDCFC /* FoolProgressBar.swift in Sources */,
 				E952846923C2331D004CDCFC /* FoolImagePicker.swift in Sources */,
 				E9995EEA23BF159600E5A527 /* FoolNoDataView.swift in Sources */,
