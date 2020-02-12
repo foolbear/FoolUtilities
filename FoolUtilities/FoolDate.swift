@@ -44,3 +44,17 @@ public extension Date {
     }
     
 }
+
+public extension Double {
+    
+    func niceTime(_ time: Double) -> String {
+        let t = Int(time);
+        let hours = t/60/60;
+        let minutes = (t - hours * 60 * 60)/60;
+        let seconds = t - hours * 60 * 60 - minutes * 60
+        if (hours > 0) { return NSString(format: "%dh%dm%ds", hours, minutes, seconds) } else
+        if (minutes <= 0) { return NSString(format: "%ds", seconds) as String } else
+        { return NSString(format: "%dm%ds", minutes, seconds) as String }
+    }
+    
+}
