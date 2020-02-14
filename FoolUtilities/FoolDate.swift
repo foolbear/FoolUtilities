@@ -56,8 +56,6 @@ public extension Double {
             return NSString(format: "%dh%dm%ds", hours, minutes, seconds) as String
         } else if minutes > 0 {
             return NSString(format: "%dm%ds", minutes, seconds) as String
-        } else if seconds > 1 {
-            return NSString(format: "%ds", seconds) as String
         } else {
             return NSString(format: "%.1fs", seconds) as String
         }
