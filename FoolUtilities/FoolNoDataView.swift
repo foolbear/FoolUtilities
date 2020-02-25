@@ -14,10 +14,9 @@ struct FoolNoDataView<Presenting, NoDataView>: View where Presenting: View, NoDa
     var bNoData: Bool
     
     var body: some View {
-        Group {
-            if !bNoData {
-                presenting()
-            } else {
+        ZStack {
+            presenting()
+            if bNoData {
                 noDataView()
             }
         }
