@@ -43,6 +43,14 @@ public extension Date {
         return result
     }
     
+    func toString(usingEasy easy: Bool = true) -> String {
+        if easy {
+            return self.easyDate()
+        } else {
+            let df = DateFormatter(); df.locale = .current; df.dateFormat = "yyyy-MM-dd HH:mm"
+            return df.string(from: self)
+        }
+    }
 }
 
 public extension Double {
