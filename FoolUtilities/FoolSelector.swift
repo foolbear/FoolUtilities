@@ -12,6 +12,8 @@ public class FoolSelector<T: Identifiable & Hashable>: ObservableObject {
     @Published public var selection: Set<T> = Set<T>()
     public var count: Int { selection.count }
     
+    public init() {}
+    
     public func isSelected(_ item: T) -> Bool {
         return selection.filter { $0.id == item.id }.count != 0
     }
