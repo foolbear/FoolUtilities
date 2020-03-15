@@ -8,7 +8,7 @@
 import Foundation
 
 @available(iOS 13.0, *)
-typealias FoolSelector<T> = Set<T> where T: Identifiable & Hashable
+public typealias FoolSelector<T> = Set<T> where T: Identifiable & Hashable
 
 @available(iOS 13.0, *)
 public extension Set where Element: Identifiable {
