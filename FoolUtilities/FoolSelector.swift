@@ -7,26 +7,36 @@
 
 import Foundation
 
-@available(iOS 13, *)
-public class FoolSelector<T: Identifiable & Hashable>: ObservableObject {
-    @Published public var selection: Set<T> = Set<T>()
-    public var count: Int { selection.count }
-    
-    public init() {}
-    
-    public func isSelected(_ item: T) -> Bool {
-        return selection.filter { $0.id == item.id }.count != 0
+@available(iOS 13.0, *)
+typealias FoolSelector3<T> = Set<T> where T: Identifiable & Hashable
+
+@available(iOS 13.0, *)
+public extension Set where Element: Identifiable {
+    @inlinable func isSelected(_ item: Element) -> Bool {
+        return self.filter { $0.id == item.id }.count != 0
     }
     
-    public func insert(_ item: T) {
-        selection.insert(item)
+    @inlinable mutating func select(_ item: Element) {
+        self.insert(item)
     }
     
-    public func remove(_ item: T) {
-        selection = selection.filter { $0.id != item.id }
+    @inlinable mutating func selectAll(_ items: Set<Element>) {
+        self = items
     }
     
-    public func removeAll() {
-        selection.removeAll()
+    @inlinable mutating func unselect(_ item: Element) {
+        self = self.filter { $0.id != item.id }
+    }
+    
+    @inlinable mutating func unselectAll() {
+        self.removeAll()
+    }
+    
+    @inlinable mutating func toggle(_ item: Element) {
+        if isSelected(item) {
+            unselect(item)
+        } else {
+            select(item)
+        }
     }
 }
