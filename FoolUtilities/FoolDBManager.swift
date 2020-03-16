@@ -23,7 +23,7 @@ public class FoolDBManager: ObservableObject {
         container.viewContext.automaticallyMergesChangesFromParent = true
         return container
     }()
-    var context: NSManagedObjectContext { return persistentContainer.viewContext }
+    public var context: NSManagedObjectContext { return persistentContainer.viewContext }
     
     private init() {}
     
