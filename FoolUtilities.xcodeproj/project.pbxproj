@@ -12,6 +12,7 @@
 		E911F75823CCC8CA005D5641 /* FoolProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911F75723CCC8CA005D5641 /* FoolProgressRing.swift */; };
 		E9160A7B240CCFDF00B1C66A /* FoolCheckToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9160A7A240CCFDF00B1C66A /* FoolCheckToggle.swift */; };
 		E9228B54240F846C00D3CEB9 /* FoolSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9228B53240F846C00D3CEB9 /* FoolSelector.swift */; };
+		E92F55B1241F55F6009BFA67 /* FoolDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92F55B0241F55F6009BFA67 /* FoolDBManager.swift */; };
 		E95216F423ACAF090004D996 /* FoolDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95216F323ACAF090004D996 /* FoolDevice.swift */; };
 		E952170223ACE61B0004D996 /* FoolColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952170123ACE61B0004D996 /* FoolColor.swift */; };
 		E952170423ACE77A0004D996 /* FoolString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952170323ACE77A0004D996 /* FoolString.swift */; };
@@ -32,6 +33,7 @@
 		E911F75723CCC8CA005D5641 /* FoolProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolProgressRing.swift; sourceTree = "<group>"; };
 		E9160A7A240CCFDF00B1C66A /* FoolCheckToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolCheckToggle.swift; sourceTree = "<group>"; };
 		E9228B53240F846C00D3CEB9 /* FoolSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolSelector.swift; sourceTree = "<group>"; };
+		E92F55B0241F55F6009BFA67 /* FoolDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolDBManager.swift; sourceTree = "<group>"; };
 		E95216F323ACAF090004D996 /* FoolDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolDevice.swift; sourceTree = "<group>"; };
 		E952170123ACE61B0004D996 /* FoolColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolColor.swift; sourceTree = "<group>"; };
 		E952170323ACE77A0004D996 /* FoolString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolString.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				E9A3CAB323E1ADD300F5BF57 /* FoolShareSheet.swift */,
 				E9160A7A240CCFDF00B1C66A /* FoolCheckToggle.swift */,
 				E9228B53240F846C00D3CEB9 /* FoolSelector.swift */,
+				E92F55B0241F55F6009BFA67 /* FoolDBManager.swift */,
 			);
 			path = FoolUtilities;
 			sourceTree = SOURCE_ROOT;
@@ -176,6 +179,7 @@
 				OBJ_22 /* FoolUtilities.swift in Sources */,
 				E9E298A723BCEB8B00EEEE38 /* FoolHeaderView.swift in Sources */,
 				E9995EF523BF8B8F00E5A527 /* FoolKeyboard.swift in Sources */,
+				E92F55B1241F55F6009BFA67 /* FoolDBManager.swift in Sources */,
 				E952170423ACE77A0004D996 /* FoolString.swift in Sources */,
 				E95216F423ACAF090004D996 /* FoolDevice.swift in Sources */,
 				E911F75823CCC8CA005D5641 /* FoolProgressRing.swift in Sources */,
