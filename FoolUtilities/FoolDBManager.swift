@@ -10,7 +10,7 @@ import CoreData
 
 @available(iOS 13.0, *)
 public class FoolDBManager: ObservableObject {
-    static let shared = FoolDBManager()
+    public static let shared = FoolDBManager()
     var containerName = ""
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentCloudKitContainer(name: containerName)
