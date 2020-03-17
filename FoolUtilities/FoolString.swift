@@ -8,6 +8,7 @@
 import Foundation
 
 public extension String {
+    enum SizeAvailable { case available, empty, oversize }
     
     func subString(start: Int, length: Int = -1) -> String {
         let count = self.count
@@ -21,6 +22,19 @@ public extension String {
         let s = self.index(self.startIndex, offsetBy: start)
         let e = self.index(s, offsetBy: len)
         return String(self[s ..< e])
+    }
+    
+    func isSizeAvailable(_ maxSize: Int = 0) -> SizeAvailable {
+        if maxSize != 0 && self.count > maxSize {
+            return .oversize
+        }
+        return self.isEmpty ? .empty : .available
+    }
+    
+    mutating func truncate(_ maxSize: Int) {
+        if self.count > maxSize {
+            self = self.subString(start: 0, length: maxSize)
+        }
     }
     
 }
