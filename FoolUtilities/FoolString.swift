@@ -31,6 +31,13 @@ public extension String {
         return self.isEmpty ? .empty : .available
     }
     
+    func truncated(_ maxSize: Int) -> String {
+        if self.count > maxSize {
+            return self.subString(start: 0, length: maxSize)
+        }
+        return self
+    }
+    
     mutating func truncate(_ maxSize: Int) {
         if self.count > maxSize {
             self = self.subString(start: 0, length: maxSize)
