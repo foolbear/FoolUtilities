@@ -13,6 +13,7 @@
 		E9160A7B240CCFDF00B1C66A /* FoolCheckToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9160A7A240CCFDF00B1C66A /* FoolCheckToggle.swift */; };
 		E9228B54240F846C00D3CEB9 /* FoolSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9228B53240F846C00D3CEB9 /* FoolSelector.swift */; };
 		E92F55B1241F55F6009BFA67 /* FoolDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92F55B0241F55F6009BFA67 /* FoolDBManager.swift */; };
+		E92F55D924238F1E009BFA67 /* FoolAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92F55D824238F1E009BFA67 /* FoolAudioManager.swift */; };
 		E95216F423ACAF090004D996 /* FoolDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95216F323ACAF090004D996 /* FoolDevice.swift */; };
 		E952170223ACE61B0004D996 /* FoolColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952170123ACE61B0004D996 /* FoolColor.swift */; };
 		E952170423ACE77A0004D996 /* FoolString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952170323ACE77A0004D996 /* FoolString.swift */; };
@@ -23,17 +24,22 @@
 		E9A3CAB423E1ADD300F5BF57 /* FoolShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3CAB323E1ADD300F5BF57 /* FoolShareSheet.swift */; };
 		E9E14F7E23B8FCF0000545A6 /* FoolDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */; };
 		E9E298A723BCEB8B00EEEE38 /* FoolHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */; };
+		F5AD2A92629896A008C6C0D0 /* Pods_FoolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A49290000205297A0B9C18C /* Pods_FoolUtilities.framework */; };
 		OBJ_22 /* FoolUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* FoolUtilities.swift */; };
 		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A49290000205297A0B9C18C /* Pods_FoolUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoolUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FB62C8600F393F2C5DB158 /* Pods-FoolUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoolUtilities.release.xcconfig"; path = "Target Support Files/Pods-FoolUtilities/Pods-FoolUtilities.release.xcconfig"; sourceTree = "<group>"; };
+		7ECBD29D7B513E72AEEA1203 /* Pods-FoolUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoolUtilities.debug.xcconfig"; path = "Target Support Files/Pods-FoolUtilities/Pods-FoolUtilities.debug.xcconfig"; sourceTree = "<group>"; };
 		E9001E1023BB227A006E33F6 /* FoolAnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolAnyView.swift; sourceTree = "<group>"; };
 		E911F74723C76409005D5641 /* FoolTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolTextField.swift; sourceTree = "<group>"; };
 		E911F75723CCC8CA005D5641 /* FoolProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolProgressRing.swift; sourceTree = "<group>"; };
 		E9160A7A240CCFDF00B1C66A /* FoolCheckToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolCheckToggle.swift; sourceTree = "<group>"; };
 		E9228B53240F846C00D3CEB9 /* FoolSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolSelector.swift; sourceTree = "<group>"; };
 		E92F55B0241F55F6009BFA67 /* FoolDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolDBManager.swift; sourceTree = "<group>"; };
+		E92F55D824238F1E009BFA67 /* FoolAudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolAudioManager.swift; sourceTree = "<group>"; };
 		E95216F323ACAF090004D996 /* FoolDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolDevice.swift; sourceTree = "<group>"; };
 		E952170123ACE61B0004D996 /* FoolColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolColor.swift; sourceTree = "<group>"; };
 		E952170323ACE77A0004D996 /* FoolString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolString.swift; sourceTree = "<group>"; };
@@ -45,26 +51,52 @@
 		E9A3CAB323E1ADD300F5BF57 /* FoolShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolShareSheet.swift; sourceTree = "<group>"; };
 		E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoolDate.swift; sourceTree = "<group>"; };
 		E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolHeaderView.swift; sourceTree = "<group>"; };
-		"FoolUtilities::FoolUtilities::Product" /* FoolUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FoolUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FoolUtilities::FoolUtilities::Product /* FoolUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FoolUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* FoolUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9D2AC5611EFF27BE6669B6D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_23 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				F5AD2A92629896A008C6C0D0 /* Pods_FoolUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4FC6D11DB058ACC17EAFD1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ECBD29D7B513E72AEEA1203 /* Pods-FoolUtilities.debug.xcconfig */,
+				70FB62C8600F393F2C5DB158 /* Pods-FoolUtilities.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA798535E0C76AC5684E4925 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A49290000205297A0B9C18C /* Pods_FoolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_14 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"FoolUtilities::FoolUtilities::Product" /* FoolUtilities.framework */,
+				FoolUtilities::FoolUtilities::Product /* FoolUtilities.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -76,6 +108,8 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_8 /* FoolUtilities */,
 				OBJ_14 /* Products */,
+				A4FC6D11DB058ACC17EAFD1E /* Pods */,
+				AA798535E0C76AC5684E4925 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +120,7 @@
 				E95216F323ACAF090004D996 /* FoolDevice.swift */,
 				E952170123ACE61B0004D996 /* FoolColor.swift */,
 				E952170323ACE77A0004D996 /* FoolString.swift */,
+				E92F55D824238F1E009BFA67 /* FoolAudioManager.swift */,
 				E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */,
 				E9001E1023BB227A006E33F6 /* FoolAnyView.swift */,
 				E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */,
@@ -106,10 +141,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"FoolUtilities::FoolUtilities" /* FoolUtilities */ = {
+		FoolUtilities::FoolUtilities /* FoolUtilities */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_18 /* Build configuration list for PBXNativeTarget "FoolUtilities" */;
 			buildPhases = (
+				F8D07FBCC6C7072C152DB31D /* [CP] Check Pods Manifest.lock */,
 				OBJ_21 /* Sources */,
 				OBJ_23 /* Frameworks */,
 			);
@@ -119,14 +155,15 @@
 			);
 			name = FoolUtilities;
 			productName = FoolUtilities;
-			productReference = "FoolUtilities::FoolUtilities::Product" /* FoolUtilities.framework */;
+			productReference = FoolUtilities::FoolUtilities::Product /* FoolUtilities.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"FoolUtilities::SwiftPMPackageDescription" /* FoolUtilitiesPackageDescription */ = {
+		FoolUtilities::SwiftPMPackageDescription /* FoolUtilitiesPackageDescription */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_25 /* Build configuration list for PBXNativeTarget "FoolUtilitiesPackageDescription" */;
 			buildPhases = (
 				OBJ_28 /* Sources */,
+				9D2AC5611EFF27BE6669B6D1 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,11 +194,36 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"FoolUtilities::FoolUtilities" /* FoolUtilities */,
-				"FoolUtilities::SwiftPMPackageDescription" /* FoolUtilitiesPackageDescription */,
+				FoolUtilities::FoolUtilities /* FoolUtilities */,
+				FoolUtilities::SwiftPMPackageDescription /* FoolUtilitiesPackageDescription */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F8D07FBCC6C7072C152DB31D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoolUtilities-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_21 /* Sources */ = {
@@ -180,6 +242,7 @@
 				E9E298A723BCEB8B00EEEE38 /* FoolHeaderView.swift in Sources */,
 				E9995EF523BF8B8F00E5A527 /* FoolKeyboard.swift in Sources */,
 				E92F55B1241F55F6009BFA67 /* FoolDBManager.swift in Sources */,
+				E92F55D924238F1E009BFA67 /* FoolAudioManager.swift in Sources */,
 				E952170423ACE77A0004D996 /* FoolString.swift in Sources */,
 				E95216F423ACAF090004D996 /* FoolDevice.swift in Sources */,
 				E911F75823CCC8CA005D5641 /* FoolProgressRing.swift in Sources */,
@@ -201,6 +264,7 @@
 /* Begin XCBuildConfiguration section */
 		OBJ_19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ECBD29D7B513E72AEEA1203 /* Pods-FoolUtilities.debug.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
@@ -230,6 +294,7 @@
 		};
 		OBJ_20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70FB62C8600F393F2C5DB158 /* Pods-FoolUtilities.release.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
