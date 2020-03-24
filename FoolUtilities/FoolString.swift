@@ -10,6 +10,8 @@ import Foundation
 public extension String {
     enum SizeAvailable { case available, empty, oversize }
     
+    var localized: String { return NSLocalizedString(self, comment: self) }
+    
     func subString(start: Int, length: Int = -1) -> String {
         let count = self.count
         var len = length
