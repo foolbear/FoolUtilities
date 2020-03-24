@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  FoolUtilities
+
+  Created by foolbear on 2020/3/25.
+  
+*/
+
+"前" = " ago";
+"后" = " later";
+"刚刚" = "just now";
+"即将" = "soom";
+"分钟" = " minute(s)";
+"小时" = " hour(s)";
+"天" = " day(s)";
+"个月" = " month(s)";
+"年" = " year(s)";

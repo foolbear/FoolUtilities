@@ -40,6 +40,7 @@
 		E952170523ACE8A50004D996 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E952846823C2331D004CDCFC /* FoolImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoolImagePicker.swift; sourceTree = "<group>"; };
 		E952846E23C3564F004CDCFC /* FoolProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoolProgressBar.swift; sourceTree = "<group>"; };
+		E9719F59242A7D5A00CBB13E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E9995EE923BF159600E5A527 /* FoolNoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolNoDataView.swift; sourceTree = "<group>"; };
 		E9995EF423BF8B8F00E5A527 /* FoolKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolKeyboard.swift; sourceTree = "<group>"; };
 		E9A3CAB323E1ADD300F5BF57 /* FoolShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolShareSheet.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 				E9160A7A240CCFDF00B1C66A /* FoolCheckToggle.swift */,
 				E9228B53240F846C00D3CEB9 /* FoolSelector.swift */,
 				E92F55B0241F55F6009BFA67 /* FoolDBManager.swift */,
+				E9719F5A242A7D5A00CBB13E /* Localizable.strings */,
 			);
 			path = FoolUtilities;
 			sourceTree = SOURCE_ROOT;
@@ -151,6 +153,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
@@ -197,6 +200,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9719F5A242A7D5A00CBB13E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9719F59242A7D5A00CBB13E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		OBJ_19 /* Debug */ = {
