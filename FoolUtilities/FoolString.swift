@@ -12,6 +12,10 @@ public extension String {
     
     var localized: String { return NSLocalizedString(self, comment: self) }
     
+    func localizedFormat(arguments: CVarArg...) -> String {
+        return String.localizedStringWithFormat(self.localized, arguments)
+    }
+    
     func subString(start: Int, length: Int = -1) -> String {
         let count = self.count
         var len = length
