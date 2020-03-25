@@ -12,8 +12,12 @@ public extension String {
     
     var localized: String { return NSLocalizedString(self, comment: self) }
     
+    static func localizer() -> (_ key: String, _ params: CVaListPointer) -> String {
+        return { (key: String, params: CVaListPointer) in return NSString(format: key.localized, arguments: params) as String }
+    }
+    
     func localizedFormat(_ arguments: CVarArg...) -> String {
-        return String.localizedStringWithFormat(self.localized, arguments)
+        return withVaList(arguments) { String.localizer()(self, $0) }
     }
     
     func subString(start: Int, length: Int = -1) -> String {
