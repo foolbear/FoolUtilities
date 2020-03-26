@@ -13,7 +13,7 @@ public struct FoolHeaderView<Leading, Title, Trailing>: View where Leading: View
     let leading: () -> Leading
     let trailing: () -> Trailing
     
-    public init(title: Title, leading: @escaping () -> Leading, trailing: @escaping () -> Trailing) {
+    public init(title: Title, @ViewBuilder leading: @escaping () -> Leading, @ViewBuilder trailing: @escaping () -> Trailing) {
         self.leading = leading
         self.title = title
         self.trailing = trailing
