@@ -26,7 +26,7 @@ struct FoolNoDataView<Presenting, NoDataView>: View where Presenting: View, NoDa
 @available(iOS 13.0, *)
 public extension View {
     
-    func foolNoData<NoDataView>(bNoData: Bool, noDataView: @escaping () -> NoDataView) -> some View where NoDataView: View {
+    func foolNoData<NoDataView>(bNoData: Bool, @ViewBuilder noDataView: @escaping () -> NoDataView) -> some View where NoDataView: View {
         FoolNoDataView(presenting: { self }, noDataView: noDataView, bNoData: bNoData)
     }
     
