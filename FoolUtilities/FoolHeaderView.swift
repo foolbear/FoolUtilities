@@ -9,11 +9,11 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public struct FoolHeaderView<Leading, Title, Trailing>: View where Leading: View, Title: View, Trailing: View {
-    var leading: Leading
-    var title: Title
-    var trailing: Trailing
+    let title: Title
+    let leading: () -> Leading
+    let trailing: () -> Trailing
     
-    public init(leading: Leading, title: Title, trailing: Trailing) {
+    public init(title: Title, leading: @escaping () -> Leading, trailing: @escaping () -> Trailing) {
         self.leading = leading
         self.title = title
         self.trailing = trailing
@@ -34,11 +34,11 @@ public struct FoolHeaderView<Leading, Title, Trailing>: View where Leading: View
                 }
                 HStack {
                     VStack(alignment: .leading) {
-                        leading.padding()
+                        leading().padding(.horizontal)
                     }
                     Spacer()
                     VStack(alignment: .trailing) {
-                        trailing.padding()
+                        trailing().padding(.horizontal)
                     }
                 }
             }
@@ -52,9 +52,8 @@ struct FoolHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             Spacer()
-            FoolHeaderView(leading: EmptyView(), title: Text("Title"), trailing:
-                Button(action: {}) {
-                    Text("Done")
+            FoolHeaderView(title: Text("Title"), leading: { EmptyView() }, trailing: {
+                Button(action: {}) { Text("Done") }
             })
             Spacer()
         }
