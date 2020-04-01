@@ -10,6 +10,7 @@ import Foundation
 public extension String {
     enum SizeAvailable { case available, empty, oversize }
     
+    var data: Data? { return self.data(using: .utf8) }
     var localized: String { return NSLocalizedString(self, comment: self) }
     
     static func localizer() -> (_ key: String, _ params: CVaListPointer) -> String {
