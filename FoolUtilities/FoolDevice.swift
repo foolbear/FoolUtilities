@@ -10,6 +10,12 @@ import UIKit
 
 public extension UIDevice {
     
+    #if targetEnvironment(macCatalyst)
+    
+    let modelName: String = "Mac"
+    
+    #else
+    
     var modelName: String {
         var systemInfo = utsname()
         uname(&systemInfo)
@@ -67,6 +73,8 @@ public extension UIDevice {
         default:                                        return identifier
         }
     }
+    
+    #endif
     
 }
 
