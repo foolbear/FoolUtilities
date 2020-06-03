@@ -12,7 +12,7 @@ public extension UIDevice {
     
     #if targetEnvironment(macCatalyst)
     
-    let modelName: String = "Mac"
+    var modelName: String { return "Mac" }
     
     #else
     
