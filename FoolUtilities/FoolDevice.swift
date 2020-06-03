@@ -26,8 +26,13 @@ public extension UIDevice {
         }
         
         switch identifier {
+        case "iPod1,1":                                 return "iPod Touch 1"
+        case "iPod2,1":                                 return "iPod Touch 2"
+        case "iPod3,1":                                 return "iPod Touch 3"
+        case "iPod4,1":                                 return "iPod Touch 4"
         case "iPod5,1":                                 return "iPod Touch 5"
         case "iPod7,1":                                 return "iPod Touch 6"
+        case "iPod9,1":                                 return "iPod Touch 7"
             
         case "iPhone3,1", "iPhone3,2", "iPhone3,3":     return "iPhone 4"
         case "iPhone4,1":                               return "iPhone 4s"
@@ -50,6 +55,7 @@ public extension UIDevice {
         case "iPhone12,1":                              return "iPhone 11"
         case "iPhone12,3":                              return "iPhone 11 Pro"
         case "iPhone12,5":                              return "iPhone 11 Pro Max"
+        case "iPhone12,8" :                             return "iPhone SE (2nd Gen)"
             
         case "iPad1,1":                                 return "iPad 1"
         case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":return "iPad 2"
@@ -68,6 +74,10 @@ public extension UIDevice {
         case "iPad7,3", "iPad7,4":                      return "iPad Pro 10.5\""
         case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4":return "iPad Pro 11\""
         case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8":return "iPad Pro 12.9\" (3rd Gen)"
+        case "iPad8,9", "iPad8,10":                     return "iPad Pro 11\" (2nd Gen)"
+        case "iPad8,11", "iPad8,12":                    return "iPad Pro 12.9\" (4rd Gen)"
+        case "iPad11,1", "iPad11,2":                    return "iPad Mini 5"
+        case "iPad11,3", "iPad11,4":                    return "iPad Air 3"
             
         case "i386", "x86_64":                          return "Simulator"
         default:                                        return identifier
