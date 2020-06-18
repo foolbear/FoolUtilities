@@ -8,14 +8,13 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct FoolNoDataView<Presenting, NoDataView>: View where Presenting: View, NoDataView: View {
-    let presenting: () -> Presenting
+struct FoolNoDataView<NoDataView>: ViewModifier where NoDataView: View {
     let noDataView: () -> NoDataView
     var bNoData: Bool
     
-    var body: some View {
+    func body(content: Content) -> some View {
         ZStack {
-            presenting()
+            content
             if bNoData {
                 noDataView()
             }
@@ -25,11 +24,9 @@ struct FoolNoDataView<Presenting, NoDataView>: View where Presenting: View, NoDa
 
 @available(iOS 13.0, *)
 public extension View {
-    
     func foolNoData<NoDataView>(bNoData: Bool, @ViewBuilder noDataView: @escaping () -> NoDataView) -> some View where NoDataView: View {
-        FoolNoDataView(presenting: { self }, noDataView: noDataView, bNoData: bNoData)
+        self.modifier(FoolNoDataView(noDataView: noDataView, bNoData: bNoData))
     }
-    
 }
 
 @available(iOS 13.0, *)
