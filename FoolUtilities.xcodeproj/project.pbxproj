@@ -12,6 +12,7 @@
 		E911F75823CCC8CA005D5641 /* FoolProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911F75723CCC8CA005D5641 /* FoolProgressRing.swift */; };
 		E9160A7B240CCFDF00B1C66A /* FoolCheckToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9160A7A240CCFDF00B1C66A /* FoolCheckToggle.swift */; };
 		E9228B54240F846C00D3CEB9 /* FoolSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9228B53240F846C00D3CEB9 /* FoolSelector.swift */; };
+		E92C424625691491006403A6 /* FoolFileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92C424525691491006403A6 /* FoolFileHelper.swift */; };
 		E92F55B1241F55F6009BFA67 /* FoolDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92F55B0241F55F6009BFA67 /* FoolDBManager.swift */; };
 		E95216F423ACAF090004D996 /* FoolDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95216F323ACAF090004D996 /* FoolDevice.swift */; };
 		E952170223ACE61B0004D996 /* FoolColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952170123ACE61B0004D996 /* FoolColor.swift */; };
@@ -35,6 +36,7 @@
 		E911F75723CCC8CA005D5641 /* FoolProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolProgressRing.swift; sourceTree = "<group>"; };
 		E9160A7A240CCFDF00B1C66A /* FoolCheckToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolCheckToggle.swift; sourceTree = "<group>"; };
 		E9228B53240F846C00D3CEB9 /* FoolSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolSelector.swift; sourceTree = "<group>"; };
+		E92C424525691491006403A6 /* FoolFileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolFileHelper.swift; sourceTree = "<group>"; };
 		E92F55B0241F55F6009BFA67 /* FoolDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolDBManager.swift; sourceTree = "<group>"; };
 		E95216F323ACAF090004D996 /* FoolDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolDevice.swift; sourceTree = "<group>"; };
 		E952170123ACE61B0004D996 /* FoolColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolColor.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				E9160A7A240CCFDF00B1C66A /* FoolCheckToggle.swift */,
 				E9228B53240F846C00D3CEB9 /* FoolSelector.swift */,
 				E92F55B0241F55F6009BFA67 /* FoolDBManager.swift */,
+				E92C424525691491006403A6 /* FoolFileHelper.swift */,
 				E9E39FDC2431DFC100ED8F27 /* FoolUIApplication.swift */,
 				E9719F5A242A7D5A00CBB13E /* Localizable.strings */,
 			);
@@ -180,6 +183,7 @@
 				E9001E1123BB227A006E33F6 /* FoolAnyView.swift in Sources */,
 				E9160A7B240CCFDF00B1C66A /* FoolCheckToggle.swift in Sources */,
 				E9A3CAB423E1ADD300F5BF57 /* FoolShareSheet.swift in Sources */,
+				E92C424625691491006403A6 /* FoolFileHelper.swift in Sources */,
 				E952846F23C3564F004CDCFC /* FoolProgressBar.swift in Sources */,
 				E952846923C2331D004CDCFC /* FoolImagePicker.swift in Sources */,
 				E9995EEA23BF159600E5A527 /* FoolNoDataView.swift in Sources */,
