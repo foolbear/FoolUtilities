@@ -8,7 +8,7 @@
 import Foundation
 
 public enum FoolFileHelper {
-    static func write<T: Encodable>(_ object:T, to fileName: String) {
+    public static func write<T: Encodable>(_ object:T, to fileName: String) {
         guard let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent(fileName) else {
             return
         }
@@ -21,7 +21,7 @@ public enum FoolFileHelper {
         }
     }
     
-    static func read<T: Decodable>(from fileName: String) -> T? {
+    public static func read<T: Decodable>(from fileName: String) -> T? {
         guard let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent(fileName) else {
             return nil
         }
