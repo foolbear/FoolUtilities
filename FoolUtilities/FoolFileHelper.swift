@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum FoolFileHelper {
+public enum FoolFileHelper {
     static func write<T: Encodable>(_ object:T, to fileName: String) {
         guard let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent(fileName) else {
             return
