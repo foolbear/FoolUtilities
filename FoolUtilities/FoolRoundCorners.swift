@@ -14,6 +14,14 @@ public struct FoolRoundCorners: View {
     var tr: CGFloat = 0.0
     var bl: CGFloat = 0.0
     var br: CGFloat = 0.0
+    
+    public init(color: Color, tl: CGFloat, tr: CGFloat, bl: CGFloat = 0, br: CGFloat = 0) {
+        self.color = color
+        self.tl = tl
+        self.tr = tr
+        self.bl = bl
+        self.br = br
+    }
 
     public var body: some View {
         GeometryReader { geometry in
