@@ -13,7 +13,8 @@ public func foolPrint<T>(_ message: T, file: String = #file, method: String = #f
     let dformatter = DateFormatter(); dformatter.dateFormat = "yy-MM-dd HH:mm:ss"
     let time = dformatter.string(from: now)
     let fileName = ((file as NSString).lastPathComponent as NSString).deletingPathExtension
-    print("\(time) \(fileName)[\(line)], \(method): \(message)")
+    let QueueName = isRunningInMainQueue() ? "M" : "c"
+    print("\(time) \(fileName)[\(line)], \(method)[\(QueueName)]: \(message)")
     #endif
 }
 
@@ -26,4 +27,14 @@ public func uInt64ToHumanReadable(input: UInt64, bBinary: Bool) -> String {
     let endIndex = units.index(units.startIndex, offsetBy: exp-1);
     let str = units[startIndex...endIndex]+(bBinary ? "i": "");
     return String(format: "%.2f %@B",  Double(input) / pow(Double(unit), Double(exp)), str as CVarArg);
+}
+
+public func isRunningInMainQueue() -> Bool {
+    let currentLabel = getCurrentQueueLabel()
+    let mainLabel = DispatchQueue.main.label
+    return currentLabel == mainLabel
+}
+
+public func getCurrentQueueLabel() -> String? {
+    return String(cString: __dispatch_queue_get_label(nil), encoding: .utf8)
 }
