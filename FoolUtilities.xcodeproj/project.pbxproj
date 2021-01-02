@@ -20,6 +20,7 @@
 		E952170423ACE77A0004D996 /* FoolString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952170323ACE77A0004D996 /* FoolString.swift */; };
 		E952846923C2331D004CDCFC /* FoolImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952846823C2331D004CDCFC /* FoolImagePicker.swift */; };
 		E952846F23C3564F004CDCFC /* FoolProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952846E23C3564F004CDCFC /* FoolProgressBar.swift */; };
+		E9575E2125A099D400C6DB27 /* FoolArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9575E2025A099D400C6DB27 /* FoolArray.swift */; };
 		E9995EEA23BF159600E5A527 /* FoolNoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9995EE923BF159600E5A527 /* FoolNoDataView.swift */; };
 		E9995EF523BF8B8F00E5A527 /* FoolKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9995EF423BF8B8F00E5A527 /* FoolKeyboard.swift */; };
 		E9A3CAB423E1ADD300F5BF57 /* FoolShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3CAB323E1ADD300F5BF57 /* FoolShareSheet.swift */; };
@@ -48,6 +49,7 @@
 		E952170523ACE8A50004D996 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E952846823C2331D004CDCFC /* FoolImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoolImagePicker.swift; sourceTree = "<group>"; };
 		E952846E23C3564F004CDCFC /* FoolProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoolProgressBar.swift; sourceTree = "<group>"; };
+		E9575E2025A099D400C6DB27 /* FoolArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolArray.swift; sourceTree = "<group>"; };
 		E9719F59242A7D5A00CBB13E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E9995EE923BF159600E5A527 /* FoolNoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolNoDataView.swift; sourceTree = "<group>"; };
 		E9995EF423BF8B8F00E5A527 /* FoolKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolKeyboard.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* FoolUtilities.swift */,
+				E9575E2025A099D400C6DB27 /* FoolArray.swift */,
 				E95216F323ACAF090004D996 /* FoolDevice.swift */,
 				E952170123ACE61B0004D996 /* FoolColor.swift */,
 				E952170323ACE77A0004D996 /* FoolString.swift */,
@@ -206,6 +209,7 @@
 				E9995EF523BF8B8F00E5A527 /* FoolKeyboard.swift in Sources */,
 				E92F55B1241F55F6009BFA67 /* FoolDBManager.swift in Sources */,
 				E9C9A9192590DB4700FFC23F /* FoolRoundCorners.swift in Sources */,
+				E9575E2125A099D400C6DB27 /* FoolArray.swift in Sources */,
 				E952170423ACE77A0004D996 /* FoolString.swift in Sources */,
 				E95216F423ACAF090004D996 /* FoolDevice.swift in Sources */,
 				E911F75823CCC8CA005D5641 /* FoolProgressRing.swift in Sources */,
