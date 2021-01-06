@@ -9,7 +9,7 @@ import Foundation
 
 public extension Optional where Wrapped == String {
     func toString(default: String) -> String {
-        guard let self = self, self.isEmpty else { return `default` }
+        guard let self = self, self.isEmpty == false else { return `default` }
         return self
     }
 }
