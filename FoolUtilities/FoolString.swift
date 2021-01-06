@@ -7,6 +7,13 @@
 
 import Foundation
 
+public extension Optional where Wrapped == String {
+    func toString(default: String) -> String {
+        guard let self = self, self.isEmpty else { return `default` }
+        return self
+    }
+}
+
 public extension String {
     enum SizeAvailable { case available, empty, oversize }
     
