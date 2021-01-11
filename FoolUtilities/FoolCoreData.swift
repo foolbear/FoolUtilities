@@ -1,5 +1,5 @@
 //
-//  FoolFetchView.swift
+//  FoolCoreData.swift
 //  FoolUtilities
 //
 //  Created by foolbear on 2020/12/10.
@@ -25,5 +25,17 @@ public struct FoolFetchView<T: NSManagedObject, Content: View>: View {
     public init(fetchRequest: NSFetchRequest<T>, @ViewBuilder content: @escaping (FetchedResults<T>) -> Content) {
         self.fetchRequest = FetchRequest<T>(fetchRequest: fetchRequest)
         self.content = content
+    }
+}
+
+public extension NSManagedObjectContext {
+    func saveChanges() {
+        guard self.hasChanges else { return }
+        do {
+            try self.save()
+        } catch {
+            let error = error as NSError
+            foolPrint("Unresolved error: \(error), \(error.userInfo)")
+        }
     }
 }
