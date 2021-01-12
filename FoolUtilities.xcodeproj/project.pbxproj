@@ -25,7 +25,7 @@
 		E9995EF523BF8B8F00E5A527 /* FoolKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9995EF423BF8B8F00E5A527 /* FoolKeyboard.swift */; };
 		E9A3CAB423E1ADD300F5BF57 /* FoolShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3CAB323E1ADD300F5BF57 /* FoolShareSheet.swift */; };
 		E9C9A9192590DB4700FFC23F /* FoolRoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A9182590DB4700FFC23F /* FoolRoundCorners.swift */; };
-		E9C9A93025924AAC00FFC23F /* FoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A92F25924AAC00FFC23F /* FoolView.swift */; };
+		E9C9A93025924AAC00FFC23F /* FoolCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A92F25924AAC00FFC23F /* FoolCombine.swift */; };
 		E9E14F7E23B8FCF0000545A6 /* FoolDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */; };
 		E9E298A723BCEB8B00EEEE38 /* FoolHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */; };
 		E9E39FDD2431DFC100ED8F27 /* FoolUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E39FDC2431DFC100ED8F27 /* FoolUIApplication.swift */; };
@@ -55,7 +55,7 @@
 		E9995EF423BF8B8F00E5A527 /* FoolKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolKeyboard.swift; sourceTree = "<group>"; };
 		E9A3CAB323E1ADD300F5BF57 /* FoolShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolShareSheet.swift; sourceTree = "<group>"; };
 		E9C9A9182590DB4700FFC23F /* FoolRoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolRoundCorners.swift; sourceTree = "<group>"; };
-		E9C9A92F25924AAC00FFC23F /* FoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolView.swift; sourceTree = "<group>"; };
+		E9C9A92F25924AAC00FFC23F /* FoolCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolCombine.swift; sourceTree = "<group>"; };
 		E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoolDate.swift; sourceTree = "<group>"; };
 		E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolHeaderView.swift; sourceTree = "<group>"; };
 		E9E39FDC2431DFC100ED8F27 /* FoolUIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolUIApplication.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				E952170123ACE61B0004D996 /* FoolColor.swift */,
 				E952170323ACE77A0004D996 /* FoolString.swift */,
 				E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */,
-				E9C9A92F25924AAC00FFC23F /* FoolView.swift */,
+				E9C9A92F25924AAC00FFC23F /* FoolCombine.swift */,
 				E9001E1023BB227A006E33F6 /* FoolAnyView.swift */,
 				E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */,
 				E9995EE923BF159600E5A527 /* FoolNoDataView.swift */,
@@ -200,7 +200,7 @@
 				E952846F23C3564F004CDCFC /* FoolProgressBar.swift in Sources */,
 				E952846923C2331D004CDCFC /* FoolImagePicker.swift in Sources */,
 				E9995EEA23BF159600E5A527 /* FoolNoDataView.swift in Sources */,
-				E9C9A93025924AAC00FFC23F /* FoolView.swift in Sources */,
+				E9C9A93025924AAC00FFC23F /* FoolCombine.swift in Sources */,
 				E9E39FDD2431DFC100ED8F27 /* FoolUIApplication.swift in Sources */,
 				E9E14F7E23B8FCF0000545A6 /* FoolDate.swift in Sources */,
 				E952170223ACE61B0004D996 /* FoolColor.swift in Sources */,
