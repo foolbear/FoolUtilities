@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 public extension View {
     func toAnyView() -> AnyView {
         AnyView(self)

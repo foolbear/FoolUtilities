@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 public struct FoolProgressBar: View {
     var progress: Double
     var size: CGSize
@@ -74,7 +74,7 @@ public struct FoolProgressBar: View {
     }
 }
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 struct FoolProgressBarTestView: View {
     @State private var progress: Double = 34
     var body: some View {
@@ -88,7 +88,7 @@ struct FoolProgressBarTestView: View {
     }
 }
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 struct FoolProgressBar_Previews: PreviewProvider {
     static var previews: some View {
         VStack {

@@ -7,10 +7,10 @@
 
 import Foundation
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 public typealias FoolSelector<T> = Set<T> where T: Identifiable & Hashable
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 public extension Set where Element: Identifiable {
     @inlinable func isSelected(_ item: Element) -> Bool {
         return self.filter { $0.id == item.id }.count != 0

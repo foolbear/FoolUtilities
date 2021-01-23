@@ -9,7 +9,7 @@ import Foundation
 
 #if os(macOS)
 
-func modelName() -> String {
+public func modelName() -> String {
     var size = 0
     sysctlbyname("hw.machine", nil, &size, nil, 0)
     var machine = [CChar](repeating: 0, count: size)
@@ -27,7 +27,7 @@ func modelName() -> String {
 
 #else
 
-func modelName() -> String {
+public func modelName() -> String {
     var systemInfo = utsname()
     uname(&systemInfo)
     let machineMirror = Mirror(reflecting: systemInfo.machine)

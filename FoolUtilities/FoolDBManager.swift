@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 public class FoolDBManager: ObservableObject {
     public static let shared = FoolDBManager()
     var containerName = ""

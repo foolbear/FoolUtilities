@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 struct FoolNoDataView<NoDataView>: ViewModifier where NoDataView: View {
     let noDataView: () -> NoDataView
     var bNoData: Bool
@@ -22,14 +22,14 @@ struct FoolNoDataView<NoDataView>: ViewModifier where NoDataView: View {
     }
 }
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 public extension View {
     func foolNoData<NoDataView>(bNoData: Bool, @ViewBuilder noDataView: @escaping () -> NoDataView) -> some View where NoDataView: View {
         self.modifier(FoolNoDataView(noDataView: noDataView, bNoData: bNoData))
     }
 }
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 struct FoolNoDataView_Previews: PreviewProvider {
     static var previews: some View {
         Group {

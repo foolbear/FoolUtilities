@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 public extension View {
     func delayPublisher(_ delay: TimeInterval) -> Future<Void, Never> {
         return Future() { promise in
@@ -19,7 +19,7 @@ public extension View {
     }
 }
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 public func debounceAndRemoveDuplicates<T: Equatable>(for publisher: Published<T>.Publisher, debounceDueTime dueTime: DispatchQueue.SchedulerTimeType.Stride = .milliseconds(500), dropFirst: Bool = false) -> AnyPublisher<T, Never> {
     if dropFirst {
         return publisher

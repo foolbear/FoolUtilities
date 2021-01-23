@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 public struct FoolProgressRing: View {
     var progress: Double
     var foregroundColor: Color = .blue
@@ -41,7 +41,7 @@ public struct FoolProgressRing: View {
     }
 }
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 struct FoolProgressRingTestView: View {
     @State private var progress: Double = 34
     var body: some View {
@@ -56,7 +56,7 @@ struct FoolProgressRingTestView: View {
     }
 }
 
-@available(iOS 13.0, OSX 10.15, *)
+@available(iOS 13.0, OSX 11.0, *)
 struct FoolProgressRing_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
