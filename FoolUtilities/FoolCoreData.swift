@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, OSX 10.15, *)
 public struct FoolFetchView<T: NSManagedObject, Content: View>: View {
     let fetchRequest: FetchRequest<T>
     let content: (FetchedResults<T>) -> Content

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, OSX 11.0, *)
 public struct FoolCheckToggle<Label> : View where Label : View {
     @Binding var isOn: Bool
     let label: Label
@@ -24,7 +24,7 @@ public struct FoolCheckToggle<Label> : View where Label : View {
     }
 }
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, OSX 11.0, *)
 struct FoolCheckToggleStyle: ToggleStyle {
     public func makeBody(configuration: Configuration) -> some View {
         HStack {
@@ -38,7 +38,7 @@ struct FoolCheckToggleStyle: ToggleStyle {
     }
 }
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, OSX 11.0, *)
 struct TestFoolCheckToggleView: View {
     @State private var isOn = false
     var body: some View {
@@ -51,7 +51,7 @@ struct TestFoolCheckToggleView: View {
     }
 }
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, OSX 11.0, *)
 struct FoolCheckToggleStyle_Previews: PreviewProvider {
     static var previews: some View {
         TestFoolCheckToggleView()

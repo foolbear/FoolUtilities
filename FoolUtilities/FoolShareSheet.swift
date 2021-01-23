@@ -5,6 +5,8 @@
 //  Created by foolbear on 2020/1/29.
 //
 
+#if !os(macOS)
+
 import SwiftUI
 
 @available(iOS 13.0, *)
@@ -32,3 +34,5 @@ public struct FoolShareSheet: UIViewControllerRepresentable {
       
     public func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }
+
+#endif

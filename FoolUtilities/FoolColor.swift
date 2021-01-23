@@ -5,6 +5,8 @@
 //  Created by foolbear on 2019/12/20.
 //
 
+#if !os(macOS)
+
 import Foundation
 import SwiftUI
 
@@ -42,3 +44,5 @@ public extension Color {
     }
     
 }
+
+#endif

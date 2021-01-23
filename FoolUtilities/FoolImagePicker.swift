@@ -6,6 +6,8 @@
 //  Copyright © 2020 Foolbear Co.,Ltd. All rights reserved.
 //
 
+#if !os(macOS)
+
 import SwiftUI
 
 @available(iOS 13.0, *)
@@ -55,3 +57,5 @@ public struct FoolImagePicker: UIViewControllerRepresentable {
         }
     }
 }
+
+#endif

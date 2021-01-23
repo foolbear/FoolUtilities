@@ -5,6 +5,8 @@
 //  Created by foolbear on 2020/1/9.
 //
 
+#if !os(macOS)
+
 import SwiftUI
 
 @available(iOS 13.0, *)
@@ -65,3 +67,5 @@ public struct FoolTextField: UIViewRepresentable {
         }
     }
 }
+
+#endif

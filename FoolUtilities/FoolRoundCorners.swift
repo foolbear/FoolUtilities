@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
+@available(iOS 13.0, OSX 10.15, *)
 public struct FoolRoundCorners: View {
     var color: Color = .blue
     var tl: CGFloat = 0.0

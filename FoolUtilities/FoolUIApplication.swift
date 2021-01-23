@@ -5,6 +5,8 @@
 //  Created by foolbear on 2020/3/30.
 //
 
+#if !os(macOS)
+
 import UIKit
 
 public extension UIApplication {
@@ -12,3 +14,5 @@ public extension UIApplication {
         sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
+
+#endif

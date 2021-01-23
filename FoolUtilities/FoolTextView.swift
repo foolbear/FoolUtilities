@@ -5,6 +5,8 @@
 //  Created by foolbear on 2020/4/2.
 //
 
+#if !os(macOS)
+
 import SwiftUI
 
 @available(iOS 13.0, *)
@@ -167,3 +169,5 @@ public struct FoolTextView<Placeholder>: View where Placeholder: View {
         }
     }
 }
+
+#endif
