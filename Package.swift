@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "FoolUtilities",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v13),
         .macOS(.v11),
