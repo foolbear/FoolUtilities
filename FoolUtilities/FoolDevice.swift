@@ -9,7 +9,7 @@ import Foundation
 
 #if os(macOS)
 
-public func modelName() -> String {
+public func deviceModelName() -> String {
     var size = 0
     sysctlbyname("hw.machine", nil, &size, nil, 0)
     var machine = [CChar](repeating: 0, count: size)
@@ -21,13 +21,13 @@ public func modelName() -> String {
 
 #if targetEnvironment(macCatalyst)
 
-func modelName() -> String {
+public func deviceModelName() -> String {
     return "Mac"
 }
 
 #else
 
-public func modelName() -> String {
+public func deviceModelName() -> String {
     var systemInfo = utsname()
     uname(&systemInfo)
     let machineMirror = Mirror(reflecting: systemInfo.machine)
