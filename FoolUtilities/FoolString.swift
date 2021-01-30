@@ -6,11 +6,20 @@
 //
 
 import Foundation
+import UIKit
 
 public extension Optional where Wrapped == String {
     func toString(default: String) -> String {
         guard let self = self, self.isEmpty == false else { return `default` }
         return self
+    }
+    
+    var imageQRCode: UIImage? {
+        guard let self = self, let data = self.data(using: .utf8), let filter = CIFilter(name: "CIQRCodeGenerator") else { return nil }
+        filter.setValue(data, forKey: "inputMessage")
+        guard let ciImage = filter.outputImage else { return nil }
+        guard let cgImage = CIContext().createCGImage(ciImage, from: ciImage.extent) else { return nil }
+        return UIImage(cgImage: cgImage)
     }
 }
 
