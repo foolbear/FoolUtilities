@@ -13,13 +13,12 @@ public extension Optional where Wrapped == String {
         guard let self = self, self.isEmpty == false else { return `default` }
         return self
     }
-    
+}
+
+public extension Optional where Wrapped == String {
     var imageQRCode: UIImage? {
-        guard let self = self, let data = self.data(using: .utf8), let filter = CIFilter(name: "CIQRCodeGenerator") else { return nil }
-        filter.setValue(data, forKey: "inputMessage")
-        guard let ciImage = filter.outputImage else { return nil }
-        guard let cgImage = CIContext().createCGImage(ciImage, from: ciImage.extent) else { return nil }
-        return UIImage(cgImage: cgImage)
+        guard let self = self else { return nil }
+        return self.imageQRCode
     }
 }
 
@@ -70,5 +69,14 @@ public extension String {
             self = self.subString(start: 0, length: maxSize)
         }
     }
-    
+}
+ 
+public extension String {
+    var imageQRCode: UIImage? {
+        guard let data = self.data(using: .utf8), let filter = CIFilter(name: "CIQRCodeGenerator") else { return nil }
+        filter.setValue(data, forKey: "inputMessage")
+        guard let ciImage = filter.outputImage else { return nil }
+        guard let cgImage = CIContext().createCGImage(ciImage, from: ciImage.extent) else { return nil }
+        return UIImage(cgImage: cgImage)
+    }
 }
