@@ -26,6 +26,7 @@
 		E9A3CAB423E1ADD300F5BF57 /* FoolShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3CAB323E1ADD300F5BF57 /* FoolShareSheet.swift */; };
 		E9C9A9192590DB4700FFC23F /* FoolRoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A9182590DB4700FFC23F /* FoolRoundCorners.swift */; };
 		E9C9A93025924AAC00FFC23F /* FoolCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A92F25924AAC00FFC23F /* FoolCombine.swift */; };
+		E9DF723F26035A2A002AEC56 /* FoolSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DF723E26035A2A002AEC56 /* FoolSnapshot.swift */; };
 		E9E14F7E23B8FCF0000545A6 /* FoolDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */; };
 		E9E298A723BCEB8B00EEEE38 /* FoolHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */; };
 		E9E39FDD2431DFC100ED8F27 /* FoolUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E39FDC2431DFC100ED8F27 /* FoolUIApplication.swift */; };
@@ -56,6 +57,7 @@
 		E9A3CAB323E1ADD300F5BF57 /* FoolShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolShareSheet.swift; sourceTree = "<group>"; };
 		E9C9A9182590DB4700FFC23F /* FoolRoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolRoundCorners.swift; sourceTree = "<group>"; };
 		E9C9A92F25924AAC00FFC23F /* FoolCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolCombine.swift; sourceTree = "<group>"; };
+		E9DF723E26035A2A002AEC56 /* FoolSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolSnapshot.swift; sourceTree = "<group>"; };
 		E9E14F7D23B8FCEF000545A6 /* FoolDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoolDate.swift; sourceTree = "<group>"; };
 		E9E298A623BCEB8B00EEEE38 /* FoolHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolHeaderView.swift; sourceTree = "<group>"; };
 		E9E39FDC2431DFC100ED8F27 /* FoolUIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolUIApplication.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				E92F55B0241F55F6009BFA67 /* FoolDBManager.swift */,
 				E95064482581FAE3004B21B0 /* FoolCoreData.swift */,
 				E9C9A9182590DB4700FFC23F /* FoolRoundCorners.swift */,
+				E9DF723E26035A2A002AEC56 /* FoolSnapshot.swift */,
 				E92C424525691491006403A6 /* FoolFileHelper.swift */,
 				E9E39FDC2431DFC100ED8F27 /* FoolUIApplication.swift */,
 				E9719F5A242A7D5A00CBB13E /* Localizable.strings */,
@@ -212,6 +215,7 @@
 				E9575E2125A099D400C6DB27 /* FoolArray.swift in Sources */,
 				E952170423ACE77A0004D996 /* FoolString.swift in Sources */,
 				E95216F423ACAF090004D996 /* FoolDevice.swift in Sources */,
+				E9DF723F26035A2A002AEC56 /* FoolSnapshot.swift in Sources */,
 				E911F75823CCC8CA005D5641 /* FoolProgressRing.swift in Sources */,
 				E9228B54240F846C00D3CEB9 /* FoolSelector.swift in Sources */,
 				E911F74823C76409005D5641 /* FoolTextField.swift in Sources */,
