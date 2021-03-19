@@ -11,30 +11,30 @@ public extension Date {
     
     func easyDate() -> String {
         let ti  = Date().timeIntervalSince(self)
-        let suffix = ti > 0 ? "前".localized : "后".localized
+        let suffix = ti > 0 ? "前".localized(.module) : "后".localized(.module)
         let timeInterval = abs(ti)
         var result: String = ""
         if timeInterval/60 < 1 {
-            result = ti > 0 ? "刚刚".localized : "即将".localized
+            result = ti > 0 ? "刚刚".localized(.module) : "即将".localized(.module)
         } else {
             let temp: Double = timeInterval/60
             if temp < 60 {
-                result = "\(Int(temp))" + "分钟".localized + "\(suffix)"
+                result = "\(Int(temp))" + "分钟".localized(.module) + "\(suffix)"
             } else {
                 let temp: Double = timeInterval/60/60
                 if temp < 24 {
-                    result = "\(Int(temp))" + "小时".localized + "\(suffix)"
+                    result = "\(Int(temp))" + "小时".localized(.module) + "\(suffix)"
                 } else {
                     let temp: Double = timeInterval / (24 * 60 * 60)
                     if temp < 30 {
-                        result = "\(Int(temp))" + "天".localized + "\(suffix)"
+                        result = "\(Int(temp))" + "天".localized(.module) + "\(suffix)"
                     } else {
                         let temp: Double = timeInterval/(30 * 24 * 60 * 60)
                         if temp < 12 {
-                            result = "\(Int(temp))" + "个月".localized + "\(suffix)"
+                            result = "\(Int(temp))" + "个月".localized(.module) + "\(suffix)"
                         } else {
                             let temp: Double = timeInterval/(12 * 30 * 24 * 60 * 60)
-                            result = "\(Int(temp))" + "年".localized + "\(suffix)"
+                            result = "\(Int(temp))" + "年".localized(.module) + "\(suffix)"
                         }
                     }
                 }
