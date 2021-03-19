@@ -28,6 +28,10 @@ public extension String {
     var utf8Data: Data? { return self.data(using: .utf8) }
     var localized: String { return NSLocalizedString(self, comment: self) }
     
+    func localized(_ bundle: Bundle = Bundle.main) -> String {
+        NSLocalizedString(self, bundle: bundle, comment: self)
+    }
+    
     static func localizer() -> (_ key: String, _ params: CVaListPointer) -> String {
         return { (key: String, params: CVaListPointer) in return NSString(format: key.localized, arguments: params) as String }
     }
