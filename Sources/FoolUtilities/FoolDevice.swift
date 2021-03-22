@@ -17,6 +17,11 @@ public func deviceModelName() -> String {
     return String(cString: machine)
 }
 
+public func systemVersion() -> String {
+    var verion = ProcessInfo.processInfo.operatingSystemVersion
+    return "\(verion.majorVersion).\(verion.minorVersion).\(version.patch)"
+}
+
 #else
 
 #if targetEnvironment(macCatalyst)
@@ -25,7 +30,14 @@ public func deviceModelName() -> String {
     return "Mac"
 }
 
+public func systemVersion() -> String {
+    var verion = ProcessInfo.processInfo.operatingSystemVersion
+    return "\(verion.majorVersion).\(verion.minorVersion).\(version.patch)"
+}
+
 #else
+
+import UIKit
 
 public func deviceModelName() -> String {
     var systemInfo = utsname()
@@ -102,6 +114,10 @@ public func deviceModelName() -> String {
     case "i386", "x86_64":                          return "Simulator"
     default:                                        return identifier
     }
+}
+
+public func systemVersion() -> String {
+    return UIDevice.current.systemVersion
 }
 
 #endif
