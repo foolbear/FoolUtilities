@@ -31,8 +31,8 @@ public func deviceModelName() -> String {
 }
 
 public func systemVersion() -> String {
-    var verion = ProcessInfo.processInfo.operatingSystemVersion
-    return "\(verion.majorVersion).\(verion.minorVersion).\(version.patch)"
+    var version = ProcessInfo.processInfo.operatingSystemVersion
+    return "\(version.majorVersion).\(version.minorVersion).\(version.patchVersion)"
 }
 
 #else
