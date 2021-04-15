@@ -20,7 +20,7 @@ public extension View {
 }
 
 @available(iOS 13.0, OSX 11.0, *)
-public func debounceAndRemoveDuplicates<T: Equatable>(for publisher: Published<T>.Publisher, debounceDueTime dueTime: DispatchQueue.SchedulerTimeType.Stride = .milliseconds(500), dropFirst: Bool = false) -> AnyPublisher<T, Never> {
+public func debounceAndRemoveDuplicates<T: Equatable>(for publisher: AnyPublisher<T, Never>, debounceDueTime dueTime: DispatchQueue.SchedulerTimeType.Stride = .milliseconds(500), dropFirst: Bool = false) -> AnyPublisher<T, Never> {
     if dropFirst {
         return publisher
             .dropFirst()
