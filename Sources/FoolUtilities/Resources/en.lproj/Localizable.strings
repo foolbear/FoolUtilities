@@ -6,11 +6,6 @@
   
 */
 
-/* NOTICE
- SwiftPM can not include resources currently. (FYI: https://bugs.swift.org/browse/SR-2866)
- So you need copy following strings used in FoolDate into your own App Localizable.strings.
-*/
-
 "前" = " ago";
 "后" = " later";
 "刚刚" = "just now";
